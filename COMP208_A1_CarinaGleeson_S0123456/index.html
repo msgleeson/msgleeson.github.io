@@ -3,34 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carina's Teaching Portfolio</title>
+    <title>Carina's Teaching Portfolio - Home</title>
 </head>
 <body>
-    <!-- This is the main heading for my page -->
-    <h1>My Teaching Portfolio</h1>
-    <!-- This is the subheading for my page -->
-    <h2> This is a subtitle</h2>
-    <!-- This is a series of subtitles for my page -->
-    <h3> This is another subtitle</h3>
-    <h4>This is another subtitle</h4>
-    <h5>This is another subtitle</h5>
-    <h6>This is another subtitle</h6>
-    <!-- This is a paragraph with font colour changed to blue -->
-    <p style="color: rgb(0,0,255);">This is a basic paragraph. It helps to break content into readable blocks.</p>
-    <!-- This paragraph is an example of using attributes to change the font -->
-    <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">This is another paragraph. Each paragraph is treated as a block, so it starts on a new line and has spacing above and below.</p>
-    <!-- This is an example of using the title attribute to show a message when hovering on a paragraph -->
-    <p title="This is a tooltip">Hover over this text to see a tooltip</p>
-    <!-- This is another example of an attribute to show ahow to add a link within a paragraph -->
-    <div style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: x-large;">
-    <h4>About Me</h4>
-    <p>My name is <strong>Carina</strong> and I am a Lecturer of <em>COMP208</em> at the <a href="https://www.acu.edu.au">Australian Catholic University.</a></p>
-    <!-- This section is all about me-->
-    <hr>
-    <p style="text-align:center;">These are my main teaching areas:</p>
-    <img src="images/Technology-Teaching-Areas-Graphic.png">
-    <hr>
-    </div>  
-
+    <!-- This is the header section for my page, in line with Semantic HTML -->
+    <header>
+        <h1 style="color: green;">My Teaching Portfolio - Carina Gleeson</h1>
+    </header>
+    <!-- Navigation menu section -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="teaching.html">Teaching Practice</a></li>
+            <li><a href="projects.html">Project Showcase</a></li>
+            <li><a href="worksamples.html">Samples of Work</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+    <!-- This is the main content area for my page, in line with Semantic HTML -->
+    <main>
+        <!-- This is the section for my Profile Photo -->
+        <section>
+            <img src="images/profile-circle-cg.png" alt="circle-shaped portrait of Lecturer, Carina Gleeson, smiling at the camera" width="150px">
+        </section>
+        <!-- This is a section with an unordered list of attributes I am known for as a teacher-->
+        <section>
+            <h2>Professional Summary</h2>
+            <ul style="font-size: medium;">
+                <li>Digital Technologies and Computing Technologies Teacher</li>
+                <li>Streaming Media and Web Industry experience</li>
+                <li>Facilitated Professional Learning workshops for Digital Technologies and Computing Technologies</li>
+                <li>Recently served as a Board Member of ICTENSW</li>
+            </ul>
+        </section>
+        <!-- This is a section with an ordered list that represents key milestones in my professional experience as a teacher-->
+        <section>
+            <h3><em>Professional Journey</em></h3>
+            <ol>
+                <li>Completed Master of Teaching</li>
+                <li>Began teaching Stagee 4 & 5 Digital Technologies and Design & Technplogy</li>
+                <li>Gained NESA Proficient Teacher Accreditation</li>
+                <li>Presented Professional Learning workshops in Digital Technologies</li>
+                <li>Began teaching Stage 6 Software, Design & Technology and Industrial Technology - Multimedia</li>
+            </ol>
+        </section>
+    </main>    
 </body>
 </html>
