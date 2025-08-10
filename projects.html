@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- This is the header section for my page, in line with Semantic HTML -->
+    <header>
+        <h1 style="color: green">Project Showcase</h1>
+    </header>
+    <!-- Navigation menu section -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="teaching.html">Teaching Practice</a></li>
+            <li><a href="projects.html">Project Showcase</a></li>
+            <li><a href="worksamples.html">Samples of Work</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+    <!-- This is the main content area for my page -->
+    <main>
+        <section>
+            <h2>Stage 4 - 6 Projects</h2>
+            <p> These are a collection of projects that I have taught across Digital Technologies and Design & Technology.</p>
+        </section>
+        <!-- This section is focused on showcasing projects/units I've taught - in flexbox format -->
+        <section>
+            <style>
+                .flex-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                }
+                .project-card {
+                    flex: 1 1 350px;
+                    background-color: #f9f9f9;
+                    border: 1px solid #ddd;
+                    padding: 15px;
+                    border-radius: 8px;
+                    box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
+                }
+
+                .project-card img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 4px;
+                }
+
+                .project-card h3 {
+                    margin-top: 10px;
+                    font-size: 1.1rem;
+                    color: #2c3e50;
+                }
+
+            </style>
+            <div class="flex-container">
+                <div class="project-card">
+                    <img src="images/stage4-stepcounter.png" alt="Photo of Student's stepcounter with branded band for Year 7 Digital Technologies: Micro:bit Product Design Unit">
+                    <h3>Stage 4 Technology Mandatory Unit</h3>
+                    <p>Year 7 Digital Technologies/Product Design Unit: My Micro:bit Wearable Product</p>
+                </div>
+                <div class="project-card">
+                    <img src="images/stage4-microbitproduct.png" alt="Photo of Student's Branded Box Product for Year 7 Digital Technologies: Micro:bit Product Design Unit">
+                    <h3>Stage 4 Technology Mandatory Unit</h3>
+                    <p>Year 7 Digital Technologies/Product Design Unit: My Micro:bit Box Product</p>
+                </div>
+                <div class="project-card">
+                    <img src="images/stage5-textiles.png" alt="Photo of blouse made with Tyvek waterproof material for 'Future Fashion' Show">
+                    <h3>Stage 5 Design and Technology - Textiles Project</h3>
+                    <p>Example of a Textiles project for Stage 5 Design & Technology Unit: Future Fashion Show</p>
+                </div>
+                <div class="project-card">
+                    <img src="images/stage5-lamp.png" alt="Photo of woven material lamp design">
+                    <h3>Stage 6 Design & Technology Lamp Design</h3>
+                    <p>Example of lamp design constructd with with CNC router-cut timber and strips of canvas material for Stage 6 Design & Technology Unit</p>
+                </div>
+                <div class="project-card">
+                    <img src="images/stage6-shelter.png" alt="Photo of underground shelter design constructed with layers of lasercut cardboard">
+                    <h3>Stage 6 Design & Technology Construction project</h3>
+                    <p>Example of an emergency shelter design made with lasercut cardboard, glue and model trees for Stage 6 Design & Technology Unit</p>
+                </div>
+                <div class="project-card">
+                    <img src="images/stage6-jewellery.png" alt="Photo of 3D printed test models of bronze ring design">
+                    <h3>Stage 6 Design & Technology Jewellery Design</h3>
+                    <p>Example of a 3D modelled ring design with test 3D prints for sizing for Stage 6 Design & Technology Unit</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
