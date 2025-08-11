@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carina's Teaching Portfolio - Teaching Practice</title>
+    <link rel="stylesheet" href="starter.css">
 </head>
 <body>
     <!-- Header section -->
     <header>
-        <h1 style="color: green"> Teaching Practice </h1>
+        <h1> Teaching Practice </h1>
     </header>
     <!-- Navigation menu section -->
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="teaching.html">Teaching Practice</a></li>
-            <li><a href="projects.html">Project Showcase</a></li>
-            <li><a href="worksamples.html">Samples of Work</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a class="active" href="teaching.html">Teaching Practice</a></li>
+                <li><a href="projects.html">Project Showcase</a></li>
+                <li><a href="worksamples.html">Samples of Work</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
     </nav>
     <!-- This is the main content area for my page -->
     <main>
@@ -28,17 +31,25 @@
             <p>I believe in creating inclusive, future-focused learning environments that empower students to develop both technical proficiency and critical thinking.</p>
             <p>My teaching is grounded in authenticity, accessibility, and equity – I design experiences that reflect real-world industry practices while supporting a diverse range of learners, including those traditionally underrepresented in STEM. </p>
             <p>I strive to foster student agency by integrating project-based learning, tangible computing, and creative expression, ensuring students see themselves as capable designers, problem-solvers, and contributors to the digital world. </p>
-            <p></p>Whether teaching HTML, CSS and JavaScript, multimedia production, or quantum programming, I encourage iterative learning to build confidence and capability.</p>
+            <p>Whether teaching HTML, CSS and JavaScript, multimedia production, or quantum programming, I encourage iterative learning to build confidence and capability.</p>
         </section>
         <!--This section is focused on my teaching philosophy, with a visual teaching quote graphic -->
         <section>
             <h2>My Teaching Philosophy</h2>
-            <img src="images/Teacher-Quote.png" alt="visual teaching quote - 'Education is not the filling of a pail but the lighting of a fire' - William Bulter Yeats" width="250px">
+            <div class="visual-quote">
+                <img src="images/Teacher-Quote.png" alt="visual teaching quote - 'Education is not the filling of a pail but the lighting of a fire' - William Bulter Yeats">
+            </div>
             <p>Central to my philosophy is a commitment to social justice and the belief that education should not only equip students with skills, but also empower them to shape a more ethical and sustainable future. </p>
             <p>I intentionally incorporate culturally responsive pedagogy, accessibility considerations, and environmental awareness into curriculum design. </p>
             <p>I also seek to model lifelong learning by collaborating with industry partners, engaging with research, and continuously refining my own practice. </p>
             <p>My goal is for students to leave my classroom not only with knowledge, but with curiosity, purpose, and a strong sense of possibility.</p>
         </section>
     </main>
+    <footer>
+        <div class="container">
+            <p> &copy; 2025 Carina Gleeson. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+
 </html>

@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carina's Teaching Portfolio - About Me</title>
+    <link rel="stylesheet" href="starter.css">
 </head>
 <body>
     <!-- This is the header section for my page -->
     <header>
-        <h1 style="color: green">About Me</h1>
+        <h1>About Me</h1>
     </header>
     <!-- Navigation menu section -->
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="teaching.html">Teaching Practice</a></li>
-            <li><a href="projects.html">Project Showcase</a></li>
-            <li><a href="worksamples.html">Samples of Work</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About Me</a></li>
+                <li><a href="teaching.html">Teaching Practice</a></li>
+                <li><a href="projects.html">Project Showcase</a></li>
+                <li><a href="worksamples.html">Samples of Work</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
     </nav>
     <!-- This is the main content area for my page -->
     <main>
@@ -34,47 +37,15 @@
         <section>
             <h2>My Teaching Experience</h2>
             <p>I have taught many technology and design-focused subjects in high schools. These are my main teaching areas: </p>
-            <img src="images/Technology-Teaching-Areas-Graphic.png" alt="Infographic showing main teaching areas: Digital technologies, Computing Technologies, Design & Technology and Industrial Technology" width="500px">
+            <div class="infographic">
+                <img src="images/Technology-Teaching-Areas-Graphic.png" alt="Infographic showing main teaching areas: Digital technologies, Computing Technologies, Design & Technology and Industrial Technology">
+            </div>
             <p>I also contributed to the development of the recently implemented Stage 6 Software Engineering and Enterprise Computing courses with NESA.</p>
             <p>I have served as a Board Member for the ICT Educators NSW teaching association, contributing to professional learning for STEM teachers.</p> 
             <p> I am passionate about providing enriching and engaging life-long learning opportunities for students</p>
         </section>
         <!--This section is focused on providing a practicum placement overview in table format-->
         <section>
-            <style>
-                table {
-                width: 100%;
-                border-collapse: collapse;
-                margin-top: 10px;
-                font-family: Arial, sans-serif;
-                }
-            
-                th, td {
-                border: 1px solid #ccc;
-                padding: 10px 12px;
-                text-align: left;
-                }
-            
-                thead {
-                background-color: #f0f0f0;
-                }
-            
-                th {
-                color: #333;
-                font-weight: bold;
-                }
-            
-                tr:nth-child(even) {
-                background-color: #fafafa;
-                }
-            
-                h2 {
-                font-family: 'Segoe UI', sans-serif;
-                font-size: 1.4rem;
-                margin-bottom: 8px;
-                color: #2c3e50;
-                }
-            </style>
             <h2>Practicum Placement Overview</h2>
             <table>
                 <thead>
@@ -102,5 +73,10 @@
             </table>
         </section>
     </main>
+    <footer>
+        <div class="container">
+            <p> &copy; 2025 Carina Gleeson. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

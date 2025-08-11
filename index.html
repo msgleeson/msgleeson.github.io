@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carina's Teaching Portfolio - Home</title>
+    <link rel="stylesheet" href="starter.css">
 </head>
 <body>
     <!-- This is the header section for my page, in line with Semantic HTML -->
     <header>
-        <h1 style="color: green;">My Teaching Portfolio - Carina Gleeson</h1>
+        <h1>My Teaching Portfolio - Carina Gleeson</h1>
     </header>
     <!-- Navigation menu section -->
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="teaching.html">Teaching Practice</a></li>
-            <li><a href="projects.html">Project Showcase</a></li>
-            <li><a href="worksamples.html">Samples of Work</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-        </ul>
+        <div class="container">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="teaching.html">Teaching Practice</a></li>
+                <li><a href="projects.html">Project Showcase</a></li>
+                <li><a href="worksamples.html">Samples of Work</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
     </nav>
     <!-- This is the main content area for my page, in line with Semantic HTML -->
     <main>
         <!-- This is the section for my Profile Photo -->
         <section>
-            <img src="images/profile-circle-cg.png" alt="circle-shaped portrait of Lecturer, Carina Gleeson, smiling at the camera" width="150px">
+            <div class="profile-photo">
+                <img src="images/profile-circle-cg.png" alt="circle-shaped portrait of Lecturer, Carina Gleeson, smiling at the camera">
+            </div>
         </section>
         <!-- This is a section with an unordered list of attributes I am known for as a teacher-->
         <section>
