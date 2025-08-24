@@ -7,6 +7,9 @@
    ===================================================== */
 
 /* ---------- 1) CSS Reset / Base ----------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');      /* Google Fonts */
+
 *, *::before, *::after {
   box-sizing: border-box;   /* Include padding & border in total size for all elements + pseudo-elements */
 }
@@ -33,8 +36,8 @@ img {
   --shadow: 0 4px 12px rgba(0,0,0,0.08);    /* Subtle shadow for depth */
   --spacing: 16px;         /* base spacing unit */
   --maxw: 1100px;          /* content width */
-  --font-body: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;  /* Body font */
-  --font-head: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;   /* Headings font */
+  --font-body: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;  /* Body font with Google Font added */
+  --font-head: "Outfit", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;   /* Headings font with Google Font added */
 }
 
 /* ---------- 3) Page Defaults --------------- */
@@ -165,17 +168,20 @@ nav a:focus-visible {
   width: 20%;                     /* Limits the image width to 35% of its container */
   border-radius: 8px;             /* Rounds the corners of the image slightly */
 }
-.visual-quote, .main-photo { 
+.main-photo { 
   max-width: 250px;       /* resizes maximum width of these images within the sections */
   width: 100%;            /* keeps proportions and maintains responsiveness */
   height: auto;           /* Maintains aspect ratio */
   padding-bottom: 25px;   /* Space below image so text isn’t too close */
 }
-.infographic, .sample-photo { 
-  max-width: 550px;       /* resizes maximum width of these images within the sections */
+.infographic, sample-phot.o { 
+  max-width: 560px;       /* resizes maximum width of these images within the sections */
   width: 100%;            /* keeps proportions and maintains responsiveness */
   height: auto;           /* Maintains aspect ratio */
   padding-bottom: 25px;   /* Space below image so text isn’t too close */
+}
+.embed-video {
+  padding-bottom: 25px;   /* Space below embedded youtube video so text isn’t too close */
 }
 table {
   width: 100%;                /* Table spans full width */
@@ -252,6 +258,13 @@ tr:nth-child(even) {
   color: var(--muted);      /* Muted text colour */
   margin-bottom: 0.8em;     /* Space below paragraph */
 }
+.card a { 
+  display: block;            /* Makes the whole card area clickable */
+}
+.card:hover { 
+  transform: translateY(-2px);   /* Lifts card up slightly on hover */
+  transition: transform .15s ease; /* Smooth hover animation */
+}
 
 /* ---------- 9) Forms ----------------------- */
 form {
@@ -288,6 +301,12 @@ button, input[type="submit"] {
 }
 button:hover, input[type="submit"]:hover {
   background: #163d79;          /* Darker brand colour on hover */
+}
+.error {
+  color: red;
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 5px;
 }
 
 /* ---------- 10) Footer --------------------- */
