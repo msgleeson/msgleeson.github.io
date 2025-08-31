@@ -69,28 +69,5 @@
             <p> &copy; 2025 Carina Gleeson. All rights reserved.</p>
         </div>
     </footer>
-    <script>
-        (function () {
-        const form = document.getElementById('contact-form');
-        if (!form) return;
-
-        form.addEventListener('submit', function (e) {
-            e.preventDefault(); // stop the default submission
-
-            // Show confirmation popup
-            alert('✅ Thank you! Your form has been sent.');
-
-            // Clear all form fields
-            form.reset();
-
-            // If you're just testing locally with action="#", stop here
-            const action = (form.getAttribute('action') || '').trim();
-            if (action === '' || action === '#') return;
-
-            // Otherwise, actually submit the form to FormSubmit (or your backend)
-            form.submit();
-        });
-        })();
-    </script>
 </body>
 </html>
