@@ -30,8 +30,9 @@
     <main>
         <!-- This is the section for the Contact Form  -->
         <section class="section">
+            <div class="container">
                 <h2>Get in touch</h2>
-                <form id="contact-form" action="#" method="post" autocomplete="on">
+                <form id="contact-form" action="https://formsubmit.co/2487304ff4051c45c57247ec7bf5ce4e" method="post" autocomplete="on">
                     <fieldset>
                         <legend>Your details</legend>
                         <!-- Form text input for Full Name -->
@@ -49,6 +50,9 @@
                         <button type="submit">Send</button>
                     </fieldset>
                 </form>
+                <!-- inline status message for once form submitted -->
+                <p id="form-status" role="status" aria-live="polite" hidden></p>
+            </div>
         </section>
         <!-- This is the section for links to socials  -->
         <section class="section" aria-labelledby="socials">
@@ -65,5 +69,28 @@
             <p> &copy; 2025 Carina Gleeson. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        (function () {
+        const form = document.getElementById('contact-form');
+        if (!form) return;
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault(); // stop the default submission
+
+            // Show confirmation popup
+            alert('✅ Thank you! Your form has been sent.');
+
+            // Clear all form fields
+            form.reset();
+
+            // If you're just testing locally with action="#", stop here
+            const action = (form.getAttribute('action') || '').trim();
+            if (action === '' || action === '#') return;
+
+            // Otherwise, actually submit the form to FormSubmit (or your backend)
+            form.submit();
+        });
+        })();
+    </script>
 </body>
 </html>
